@@ -13,14 +13,15 @@
 .outer .seat .disciple3d{width:58px;height:78px}
 @media(max-width:520px){.throne .disciple3d{width:70px;height:98px;margin-bottom:-5px}.seat .disciple3d{width:54px;height:73px;margin-bottom:-6px}.outer .seat .disciple3d{width:46px;height:64px;margin-bottom:-8px}}
 
-/* Phóng to rõ nhân vật Nam bằng scale hình vẽ 3D, không chỉ nới khung ảnh */
-.throne .disciple3d.male-character{transform:scale(1.5);transform-origin:50% 85%}
-.seat .disciple3d.male-character{transform:scale(1.4);transform-origin:50% 85%}
-.outer .seat .disciple3d.male-character{transform:scale(1.35);transform-origin:50% 85%}
+/* Hai nhân vật cùng khung, cùng tỷ lệ và cùng đường chân đứng */
+.disciple3d{object-fit:contain;object-position:50% 100%;vertical-align:bottom;transform:scale(1.5);transform-origin:50% 100%}
+.throne .disciple3d{transform:scale(1.5);transform-origin:50% 100%}
+.seat .disciple3d{transform:scale(1.4);transform-origin:50% 100%}
+.outer .seat .disciple3d{transform:scale(1.35);transform-origin:50% 100%}
 @media(max-width:520px){
- .throne .disciple3d.male-character{transform:scale(1.55);transform-origin:50% 85%}
- .seat .disciple3d.male-character{transform:scale(1.45);transform-origin:50% 85%}
- .outer .seat .disciple3d.male-character{transform:scale(1.4);transform-origin:50% 85%}
+ .throne .disciple3d{transform:scale(1.55);transform-origin:50% 100%}
+ .seat .disciple3d{transform:scale(1.45);transform-origin:50% 100%}
+ .outer .seat .disciple3d{transform:scale(1.4);transform-origin:50% 100%}
 }
 </style></head><body><div class="sky"></div><header><div class="eyebrow">TIÊN MÔN · TU ĐẠO · TRƯỜNG SINH</div><h1 class="brand">THIÊN ĐẠO TÔNG</h1><div class="subtitle">NHẤT NIỆM THÔNG THIÊN · VẠN ĐẠO QUY TÔNG</div></header>
 <main><div class="gate"><div class="roof">🏯</div><strong>THIÊN ĐẠO TÔNG</strong><small>TIÊN SƠN · VÂN HẢI · LINH TUYỀN</small><div style="font-size:20px;margin-top:8px">☁️　⛰️　💧　⛰️　☁️</div></div>
